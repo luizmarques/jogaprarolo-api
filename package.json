@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "start": "node index.js",
     "start:dev": "./node_modules/.bin/nodemon src/index.js",
     "lint": "./node_modules/.bin/eslint src/**/*.js"
   },
