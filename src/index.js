@@ -14,6 +14,6 @@ app.use(cors());
 
 app.use(router);
 
-app.listen(port, () => {
-	console.log(`App running at ${port}`);
+app.listen(port, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
