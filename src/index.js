@@ -2,6 +2,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import router from './router/index.js';
+const port = process.env.PORT || 3333;
 dotenv.config()
 
 const port = 3001;
@@ -13,6 +14,6 @@ app.use(cors());
 
 app.use(router);
 
-app.listen(process.env.PORT || port, () => {
+app.listen(port, () => {
 	console.log(`App running at ${port}`);
 });
